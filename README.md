@@ -10,6 +10,22 @@ GenAI ChatBot is an AI-powered chatbot designed to interact with users by levera
 - **LLM Integration**: Uses a generative AI model to enhance responses.
 - **Flask-Based Backend**: The server is powered by Flask, making it easy to deploy and extend.
 
+## Evaluation Metrics
+
+Evaluated the chatbot’s performance using two key metrics on several queries. For one representative query, the results were as follows:
+
+**Rouge-L F-measure:**
+- **Standard LLM:** 0.17
+- **BM25_llm_answer:** 0.25 (+47% improvement over Standard LLM)
+- **LLM with RAG Chain:** 0.318 (+87% improvement over Standard LLM)
+
+**Sentence Transformer Cosine Similarity:**
+- **Standard LLM:** 0.78
+- **BM25_llm_answer:** 0.55 (29% lower than Standard LLM)
+- **LLM with RAG Chain:** 0.9 (+15% improvement over Standard LLM)
+
+> *These enhancements were achieved by integrating **LLaMA** for language generation, **LangChain** for orchestration, and **Chroma** as the vector store to index a 4,000-page medical PDF knowledge base for retrieval-augmented generation.
+
 ## Project Structure
 ```
 GenAI_ChatBot/
