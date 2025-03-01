@@ -5,8 +5,11 @@ pypdf
 langchain-community
 langchain-experimental
 langchain-ollama
+langchain_chroma
+langchain-huggingface
 chromadb
 rank-bm25
 nltk
 rouge-score
+flask-cors
 -e .
